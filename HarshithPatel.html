@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harshtih Patel</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no"> 
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+
+  
+  <link rel = "stylesheet"
+  type = "text/css"
+  href = "MainCSS.css" />
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container" >
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand"  style="margin-left:-125px">Harshtih Patel</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2 href="#">Statistics</h2>
+            <div style="margin: auto;">
+              <table id="bikeStationTable"></table>
+            </div>
+            <div id="chart_div" style="height: 300px; width: 100%;"></div>
+          </div>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#summary">SUMMARY</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#hobbies">HOBBIES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="about" class="container-fluid mainfont">
+    <div class="row">
+      <div class="col-sm-8">
+        <br>
+        <br>
+        <h2>About Me </h2><br>
+        <h4>Passionate .NET developer with 6+ years industry experience.</h4><br>
+        <p >Pursuing masters in computer science at Trinity College Dublin, Ireland. Exploring artificial intelligence and machine learning. Passionate .NET C# developer with sound 6+ years of industry experience. Expertised in developing solutions on Asp.Net Web forms, Asp.Net MVC, Asp.Net Web API,  Microsoft SQL Server, HTML/CSS, Jquery, Telerik UI, AngularJS, Bootstrap, NodeJS, Typescript, Sencha ExtJs. Always up to take challenges in building complex web solutions. Available and eligible to work full time in Ireland from 1st June 2018 onwards.</p>
+        <!-- <br><button class="btn btn-default btn-lg">Get in Touch</button> -->
+      </div>
+      <div class="col-sm-4">
+        <br>
+        <br>
+        <span><img width="430px" height="300px" src="Harshith1.jpeg"/></span>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="summary" class="container-fluid  bg-grey mainfont" >
+    <br>
+    <h2 >SUMMARY</h2>
+
+    <div >
+      <ul >
+        <li>Overall 6 years of experience in C#(.NET) Software Development and Research.</li>
+        <li>Experience in developing web solutions for various customers.</li>
+        <li>Excellent technical, interpersonal and problem-solving skills.</li>
+        <li>1 year experience as onsite developer for Airbus, Bristol, UK (2014).</li>
+        <li>Star performer awardee in Infosys for Q3, 2013.</li>
+        <li>Completed bachelors degree in Electronics and Communication from GMIT, India in 2011.</li>
+        <li>Currently pursuing masters in computer science at TCD, Dublin, Ireland.</li>
+        <li>Eligible to work full time in Ireland from June/2018.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="experience" class="container-fluid  bg-grey mainfont" >
+    <br>
+    <h2 >EXPERIENCE</h2>
+    <div >
+      <ul>
+        <li><b>Organization 2</b></li>
+        <ul>
+        <li>
+          Organization  :   TCS, Bangalore, India
+        </li>
+        <li>
+          Duration    :   02 Dec 2015 – 25 Aug 2017
+        </li>
+        <li>
+          Total   :   1 Year 9 Months
+        </li>
+        <li>
+          Role   :   Senior .NET Developer
+        </li>
+      </ul>
+      </ul>
+      <ul>
+        <li><b>Organization 1</b></li>
+        <ul>
+        <li>
+          Organization   :   Infosys Ltd, Bangalore, India
+        </li>
+        <li>
+          Duration    :   11 July 2011 – 27 Nov 2015
+        </li>
+        <li>
+          Total   :   4 Years 4 Months 
+        </li>
+          <li>
+          Role   :   .NET Developer
+        </li>
+      </ul>
+      </ul>
+    </div>
+  </div>
+
+  <div id="projects" class="container-fluid bg-grey mainfont" >
+    <br>
+    <h2 >PROJECTS</h2>
+    <div >
+      <ul>
+        <li>
+          <b>.NET Based Centralized Logging System</b> <button id="btnProj1" onclick="doToggle(1);" class="buttonProject">View Details</button>
+        </li>
+        <ul id="ulProj1" class="listToggle" >
+          <li class="liClass"><b>Desciption</b> - A centralized system to create and store log events. Domain app developers are the end users. DLLs and Log4Net adapter was used by third party .Net based application to insert logs. Non .Net based applications use Web API calls to insert logs. A MVC based web UI to display the logs from the database.</li>
+          <li class="liClass"><b>Responsiblities</b> - Requirement analysis, coding, unit testing and deployment.</li>
+          <li class="liClass"><b>Technologies Used</b> - C# 4.5, ASP.NET Web API 2.0, ASP MVC 5.0, Telerik Kendo UI, SQL Server</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>
+          <b>.NET Based Notification System</b><button id="btnProj2" onclick="doToggle(2);" class="buttonProject">View Details</button>
+        </li>
+        <ul id="ulProj2" class="listToggle">
+          <li class="liClass"><b>Desciption</b> - Business needed a highly reliable and scalable notification system to send notifications to a set of employee desktops from an admin interface. We developed the solution with two parts, a web application used by admin to send notifications and a windows application that opens automatically on desktops on every fresh login to display notifications.</li>
+          <li class="liClass"><b>Responsiblities</b> - Requirement analysis, coding, unit testing and deployment.</li>
+          <li class="liClass"><b>Technologies Used</b> - C#, ASP.NET Web API 2.0, ASP MVC 5.0, Telerik Kendo UI, XML based database</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>
+          <b>.NET Based Application To Support Pharma Legal Teams</b><button id="btnProj3" onclick="doToggle(3);" class="buttonProject">View Details</button>
+        </li>
+        <ul id="ulProj3" class="listToggle">
+          <li class="liClass"><b>Desciption</b> - Legal, Legal IT department requires full end-to-end traceability or “chain-of-custody” of what, how and where this data has been sent, e.g. outside counsel or a vendor for processing. A web solution was developed with robust GRID Views and pie charts enabling end users to perform extensive data oriented activities and to view consolidated results.</li>
+          <li class="liClass"><b>Responsiblities</b> - Requirement analysis, coding, unit testing and deployment.</li>
+          <li class="liClass"><b>Technologies Used</b> - C#, ASP.NET 4.0, JQuery 1.4.1, Oracle 12c, Infragistics Ignite UI</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>
+          <b>.NET MVC Based Events Management Tool</b><button id="btnProj4" onclick="doToggle(4);" class="buttonProject">View Details</button>
+        </li>
+        <ul id="ulProj4" class="listToggle">
+          <li class="liClass"><b>Desciption</b> - FAMOUS is a ASP.NET MVC web application used to store, add, upload and track events which are responsible for operation reliability of an aircraft.
+            FAMOUS also has a batch script (a console application) which runs as job every day to upload new events to the application from an excel.
+          </li>
+          <li class="liClass"><b>Responsiblities</b> - Requirement analysis, documentation of impact analysis and designs, coding, unit testing and application maintenance.</li>
+          <li class="liClass"><b>Technologies Used</b> - C#, MVC 4, .Net 4.5, Sencha EXtJS, SQL Server</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>
+          <b>.NET Based Change Management Desktop Tool</b><button id="btnProj5" onclick="doToggle(5);" class="buttonProject">View Details</button>
+        </li>
+        <ul id="ulProj5" class="listToggle">
+          <li class="liClass"><b>Desciption</b> - DORIS is a windows application to track change management activities of an aircraft wing system. Used MSAccess as front end and MSSQL as backend database.
+          </li>
+          <li class="liClass"><b>Responsiblities</b> - Client facing, requirements gathering from business end users, coding, unit testing, hosting at client site and assisting end users in UAT.</li>
+          <li class="liClass"><b>Technologies Used</b> - VBA (MSAccess), SQl Server, C# utility script (Batch job running everyday)</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>
+          <b>.NET Based Aircraft Stress Management Tool</b><button id="btnProj6" onclick="doToggle(6);" class="buttonProject">View Details</button>
+        </li>
+        <ul id="ulProj6" class="listToggle">
+          <li class="liClass"><b>Desciption</b> - Asp.Net web application used to perform major aircraft stress related calculations and landing gear positions. Also used web service to perform some remote actions.
+          </li>
+          <li class="liClass"><b>Responsiblities</b> - Requirement analysis, documentation of impact analysis and designs, coding, unit testing and application maintenance.</li>
+          <li class="liClass"><b>Technologies Used</b> - C#, SQL Server, JQuery, ASP.NET Web Forms, C# Web Service</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>
+          <b>.NET Based Supplier Management Tool</b><button id="btnProj7" onclick="doToggle(7);" class="buttonProject">View Details</button>
+        </li>
+        <ul id="ulProj7" class="listToggle">
+          <li class="liClass"><b>Desciption</b> - This is an ASP.NET web application developed as a solution to Airbus to manage all their supplier tools at a single point with different roles given for Airbus, supplier and other stake holders involved.
+          </li>
+          <li class="liClass"><b>Responsiblities</b> - Requirement analysis, documentation of impact analysis and designs, coding, unit testing and application maintenance.</li>
+          <li class="liClass"><b>Technologies Used</b> - C#, SQL Server, JQuery, ASP.NET Web Forms</li>
+        </ul>
+      </ul>
+
+
+    </div>
+  </div>
+
+
+
+  <div id="hobbies"  class="container-fluid  bg-grey mainfont">
+    <br>
+    <h2>HOBBIES</h2>
+      <div >
+      <ul>
+        <li>Exploring web technolgies and new tech innovations.</li>
+        <li>Listen to tech seminars and speeches from industry leaders.</li>
+        <li>Wildlife enthusiast. Big fan of wildlife documentaries.</li>
+        <li>Interested sports are Cricket and Tennis.</li>
+        <li>Enjoy travelling and exploring new places.</li>
+        <li>Invests time in developing .NET and web based innovative solutions.</li>
+        <li>Interested in mentoring and discussions with tech enthusiasts. </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="contact" class="container-fluid bg-grey" >
+    <br>
+    <h2 >CONTACT</h2>
+    <div>
+      <ul>
+        <li>
+          Email : <a href="mailto:iamharshithpatel@gmail.com">iamharshithpatel@gmail.com</a>
+        </li>
+
+        <li>
+            Mobile : +353 89 498 8782
+        </li>
+        <li>
+            LinkedIn : <a href="https://www.linkedin.com/in/harshith-patel/">Harshith-Patel</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer class="container-fluid text-center" style="bottom:0;margin-left: 0%;background-color: #353535;color:white">
+<!--   <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a> -->
+  <p>Developed By - Harshith Patel, .NET Enthusiast, 2018 </p>
+</footer>
+  <script src="HarshithPatel.js"></script>
+</html>
